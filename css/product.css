@@ -1,0 +1,73 @@
+.product {
+    height: 758px;
+    background-color: #E6DFCC;
+    background-image: url(../svg/body/КорзинкаТележка.svg),url(../svg/body/Карточка.svg), url(../svg/body/Клубки\ и\ ножницы2.svg);
+    background-repeat: no-repeat, no-repeat, round;
+    background-position: 665px 10px, top, 0px;
+    background-size: auto, 1000px 800px, auto;
+    color: #5E3628;
+    text-align: justify;
+    line-height: 30px;
+    max-width: 1980px;
+    margin: auto;
+}
+
+.inputphoto {
+    padding-top: 35px;
+    padding-left: 1100px;
+}
+
+.AddProduct {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #E6DFCC;
+    border-radius: 20px;
+    color: #5E3628;
+    -webkit-box-shadow: -22px -18px 0px 1px #5E3628 inset;
+    -moz-box-shadow: -22px -18px 0px 1px #5E3628 inset;
+    box-shadow: -1px -3px 0px 1px #5E3628 inset;
+    font-size: 18px;
+    margin-left: 2%;
+}
+
+.ProductText {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.placeholder {
+    border-radius: 5px; 
+    background-color: #E6DFCC; 
+    padding-right: 150px;
+}
+
+.allplaceholders {
+    padding-left: 28%;
+    padding-top: 5%;
+}
+
+.placeholdertext {
+    padding-top: 8px; 
+    font-size: 22px; 
+    color: #E6DFCC;
+}
+
+.price {
+    border-radius: 15px; 
+    background-color: #E6DFCC;
+    width: 10%;
+    height: 9%;
+    margin-top: 7px;
+    margin-left: 115px;
+    height: 65px;
+    width: 180px;
+}
+
+.placeholdertextprice {
+    padding-top: 2%;
+    padding-left: 12%; 
+    font-size: 22px; 
+    color: #E6DFCC;
+}

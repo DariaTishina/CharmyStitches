@@ -1,0 +1,54 @@
+.main {
+    height: 1870px;
+    background-color: #E6DFCC;
+    background-image:  url(../svg/body/Большое\ фото\ слева.svg), url(../svg/body/Большое\ фото\ посередине.svg), url(../svg/body/Большое\ фото\ справа.svg), url(../svg/body/Маленькие\ круглые\ фото.svg), url(../svg/body/Рисованный\ декор.svg), url(../svg/body/Клубки\ и\ ножницы\ на\ фоне.svg);
+    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat,no-repeat, round;
+    max-width: 1980px;
+    margin: auto;
+    background-position: 250px 1320px, 770px 1000px, 1300px 1320px, 450px 1070px, center, top center;
+}
+
+.firstmaintext {
+width: 1500px;
+    font-size: 24px;
+    color: #5E3628;
+    padding-top: 400px;
+    padding-left: 900px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.secondmaintext {
+    padding-left: 450px;
+    font-size: 24px;
+    color: #5E3628;
+    padding-top: 255px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.downsign {
+    padding-top: 26%;
+    padding-left: 36%;
+}
+
+.GoShopping {
+    margin-top: 1.5%;
+    margin-left: 824px;
+    width: 230px;
+    height: 70px;
+    border: none;
+    background-color: #527976;
+    font-size: 20px;
+    border-radius: 30px;
+    color: #E6DFCC;
+    -webkit-box-shadow: -22px -18px 0px 1px #5E3628 inset;
+    -moz-box-shadow: -22px -18px 0px 1px #5E3628 inset;
+    box-shadow: -3px -3px 0px 1px #5E3628 inset;
+}
+
+#goshoppinganimate {
+    animation: tada;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
