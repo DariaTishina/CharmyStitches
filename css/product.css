@@ -71,3 +71,33 @@
     font-size: 22px; 
     color: #E6DFCC;
 }
+
+@media only screen and (max-width: 600px) {
+    .product {
+        height: auto;
+        background-position: center, top, center; /* Изменяем позицию фоновых изображений */
+        background-size: auto, 100%, auto; /* Изменяем размер фоновых изображений */
+    }
+
+    .ProductText {
+        font-size: 24px;
+    }
+
+    .allplaceholders {
+        padding-left: 5%; /* Изменяем отступ для мобильных устройств */
+    }
+
+    .placeholder {
+        width: 100%; /* Растягиваем текстовые поля на всю ширину экрана */
+        margin-bottom: 10px; /* Добавляем отступ между полями */
+    }
+
+    .price {
+        width: 100%;
+        margin-left: 0; /* Убираем левый отступ */
+    }
+
+    .AddProduct {
+        margin-left: 5%;
+    }
+}
