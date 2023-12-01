@@ -28,3 +28,27 @@
     font-size: 25px; 
     padding-left: 450px;
 }
+
+@media only screen and (max-width: 600px) {
+    .ContactsText {
+        font-size: 25px;
+        padding-top: 4%;
+    }
+    
+    .contacts {
+        background-position: 10px 100px, 10px 400px, 70px 620px, 1350px 150px, 0px;
+        background-size:150px, 150px, 300px, auto, auto;
+    }
+
+    .role {
+        font-size: 20px; 
+        padding-top: 35px; 
+        padding-left: 170px;
+    }
+
+    .othertext {
+        font-size: 14px; 
+        padding-left: 170px;
+        line-height: 27px;
+    }
+}

@@ -74,30 +74,33 @@
 
 @media only screen and (max-width: 600px) {
     .product {
-        height: auto;
-        background-position: center, top, center; /* Изменяем позицию фоновых изображений */
-        background-size: auto, 100%, auto; /* Изменяем размер фоновых изображений */
+        background-image: url(../svg/body/Карточка.svg), url(../svg/body/Клубки\ и\ ножницы2.svg);
+        background-repeat: no-repeat, round;
+        background-position: -500px 9px, 0px;
+        background-size: 1000px 800px, auto;
     }
 
     .ProductText {
-        font-size: 24px;
+        font-size: 25px;
+        padding-top: 4%;
     }
 
     .allplaceholders {
-        padding-left: 5%; /* Изменяем отступ для мобильных устройств */
+        padding-left: 7%;
     }
 
     .placeholder {
-        width: 100%; /* Растягиваем текстовые поля на всю ширину экрана */
+        width: 90%; /* Растягиваем текстовые поля на всю ширину экрана */
         margin-bottom: 10px; /* Добавляем отступ между полями */
     }
 
     .price {
-        width: 100%;
+        width: 90%;
         margin-left: 0; /* Убираем левый отступ */
     }
 
     .AddProduct {
-        margin-left: 5%;
+        margin-left: 27%;
+        margin-top: 3%;
     }
 }

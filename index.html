@@ -23,7 +23,7 @@
                 <img src="svg/header and nav/Дискорд.svg" height="60px">
             </a>
             <a href="index.html" class="headerbutton jumpbuttons">
-                <img src="svg/header and nav/Логотип.svg" id="logosize" height="90px" width="500px">
+                <img src="svg/header and nav/Логотип.svg" id="logosize">
             </a>
             <a href="authorization.html" class="headerbutton jumpbuttons">
                 <img src="svg/header and nav/Вход.svg" alt="" height="70px" width="138">
@@ -44,6 +44,23 @@
         </a>
     </nav>
     </div>
+    <div class="topmob">
+        <a href="index.html" class="headerbutton">
+            <img src="svg/header and nav/Логотип.svg" id="logosize">
+        </a>
+        <select name="buttonsmob" id="headerbuttonsmob" onchange="if (this.value) window.location.href = this.value">
+        <option value="index.html">Разделы</option>
+        <option value="about.html">О нас</option>
+        <option value="shop.html">Магазин</option>
+        <option value="articles.html">Статьи</option>
+        <option value="contacts.html">Контакты</option>
+        <option value="https://vk.com/daria_silentium">ВК</option>
+        <option value="https://pin.it/swnjNBZ">Пинтерест</option>
+        <option value="https://discord.com/">Дискорд</option>
+        <option value="authorization.html">Вход</option>
+        </select>
+    </div>
+    
    
     <div class="main">
         <div class="firstmaintext">
@@ -62,7 +79,7 @@
             </ul>
             </div>
             <div class="downsign">
-                <img src="svg/body/Ваш источник вдохновения.svg" alt="">
+                <img src="svg/body/Ваш источник вдохновения.svg">
             </div>
             <a href="shop.html">
                 <div id="goshoppinganimate">
@@ -70,6 +87,9 @@
                         Вперед за покупками!
                     </button>
                 </div>
+                <button class="GoShoppingMob">
+                    Вперед за покупками!
+                </button>
             </a>
     </div>
     

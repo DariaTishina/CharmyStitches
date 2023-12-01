@@ -47,6 +47,10 @@ width: 1500px;
     box-shadow: -3px -3px 0px 1px #5E3628 inset;
 }
 
+.GoShoppingMob {
+    display: none;
+}
+
 #goshoppinganimate {
     animation: tada;
     animation-duration: 2s;
@@ -55,16 +59,49 @@ width: 1500px;
 
 @media only screen and (max-width: 600px) {
     .main {
-        height: auto;
+        height: 800px;
+        background-image:  url(../svg/body/Рисованный\ декор\ моб.svg), url(../svg/body/Клубки\ и\ ножницы\ на\ фоне.svg);
+        background-repeat: no-repeat, round;
+        background-size: 150%, auto;
+        background-position: top center;
     }
 
-    .firstmaintext,
-    .secondmaintext,
+    .firstmaintext {
+        padding-top: 170px;
+        font-size: 13px;
+        width: 350px;
+        padding-left: 50px;
+    }
+
     .downsign {
-        padding: 20px; /* Примерный отступ для мобильных устройств */
+        display: none;
+    }
+
+    .secondmaintext {
+        font-size: 15px;
+        width: 400px;
+        padding: 20px;
+        padding-left: 70px;
+        padding-top: 20%;
     }
 
     .GoShopping {
-        margin-left: 20px;
+        display: none;
+    }
+
+    .GoShoppingMob {
+        display: block;
+        margin-top: 17%;
+        margin-left: 35%;
+        width: 120px;
+        height: 70px;
+        border: none;
+        background-color: #527976;
+        font-size: 15px;
+        border-radius: 30px;
+        color: #E6DFCC;
+        -webkit-box-shadow: -22px -18px 0px 1px #5E3628 inset;
+        -moz-box-shadow: -22px -18px 0px 1px #5E3628 inset;
+        box-shadow: -3px -3px 0px 1px #5E3628 inset;
     }
 }

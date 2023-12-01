@@ -52,3 +52,46 @@
     -moz-box-shadow: -22px -18px 0px 1px #5E3628 inset;
     box-shadow: -3px -3px 0px 1px #5E3628 inset;
 }
+
+@media only screen and (max-width: 600px) {
+    .product {
+        margin-left: 13px;
+        margin-top: 50px;
+        height: 170px;
+        width: 50px;
+        background-color: #98AEA6;
+        background-image: url(../svg/body/Вопрос.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        border-radius: 7px;
+        border-color: #527976;
+        border-style: solid;
+    }
+    .ShopText {
+        font-size: 25px;
+        text-align: center;
+        padding-left: 10%;
+        padding-top: 4%;
+    }
+
+    #TextAndButton {
+        display: contents;
+    }
+
+    .Add {
+        margin-top: 10%;
+        margin-left: 28%;
+        width: 200px;
+        height: 50px;
+        border: none;
+        background-color: #527976;
+        font-size: 19px;
+        border-radius: 30px;
+        color: #E6DFCC;
+        -webkit-box-shadow: -22px -18px 0px 1px #5E3628 inset;
+        -moz-box-shadow: -22px -18px 0px 1px #5E3628 inset;
+        box-shadow: -3px -3px 0px 1px #5E3628 inset;
+    }
+    
+}
