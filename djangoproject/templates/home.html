@@ -1,0 +1,127 @@
+{%extends 'base.html'%}
+{%block content%}
+
+    {% if user.is_authenticated %}
+        <a href="{% url 'logout' %}">Выйти</a>
+    {% else %}
+        <a href="{% url 'login' %}">Войти</a> | 
+        <a href="{% url 'register' %}">Регистрация</a>
+    {% endif %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'header_footer.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="djangoproject/templates/header_footer.css">
+        <link rel="stylesheet" href="djangoproject/templates/main.css">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Prata" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Главная страница</title>
+    </head>
+    <body>
+        <div class="top">
+            <header>
+                <a target="_blank" href="https://vk.com/daria_silentium" class="headerbutton jumpbuttons">
+                    <img src="{% static "svg/Вк.svg" %}" height="60px"/>
+                </a>
+                <a target="_blank" href="https://pin.it/swnjNBZ" class="headerbutton jumpbuttons">
+                    <img src="{% static "svg/Пинтерест.svg" %}" height="60px"/>
+                </a>
+                <a target="_blank" href="https://discord.com/" class="headerbutton jumpbuttons">
+                    <img src="{% static "svg/Дискорд.svg" %}" height="60px"/>
+                </a>
+                <a href="{% url 'home' %}" class="headerbutton jumpbuttons">
+                    <img src="{% static "svg/Логотип.svg" %}" id="logosize"/>
+                </a>
+                <a href="{% url 'login' %}" class="headerbutton jumpbuttons">
+                    <img src="{% static "svg/Вход.svg" %}" height="70px" width="138"/>
+                </a>
+        </header>
+        <nav>
+            <a href="{% url 'about' %}" class="navbutton jumpbuttons">
+                о нас
+            </a>
+            <a class="navbutton jumpbuttons">
+                магазин
+            </a>
+            <a class="navbutton jumpbuttons">
+                статьи
+            </a>
+            <a class="navbutton jumpbuttons">
+                контакты
+            </a>
+        </nav>
+        </div>
+        <div class="topmob">
+            <a href="{% url 'home' %}" class="headerbutton">
+                <img src="{% static "svg/Логотип.svg" %}" id="logosize"/>
+            </a>
+            <select name="buttonsmob" id="headerbuttonsmob" onchange="if (this.value) window.location.href = this.value">
+            <option value="{% url 'home' %}">Разделы</option>
+            <option value="{% url 'about' %}">О нас</option>
+            <option>Магазин</option>
+            <option>Статьи</option>
+            <option>Контакты</option>
+            <option value="https://vk.com/daria_silentium">ВК</option>
+            <option value="https://pin.it/swnjNBZ">Пинтерест</option>
+            <option value="https://discord.com/">Дискорд</option>
+            <option value="{% url 'login' %}">Вход</option>
+            </select>
+        </div>
+        
+    
+        <div class="main" style="background-image: url(static/svg/Большое\ фото\ слева.svg), 
+        url(static/svg/Большое\ фото\ посередине.svg),
+        url(static/svg/Большое\ фото\ справа.svg),
+        url(static/svg/Маленькие\ круглые\ фото.svg),
+        url(static/svg/Рисованный\ декор.svg),
+        url(static/svg/Клубки\ и\ ножницы\ на\ фоне.svg);">
+            <div class="firstmaintext">
+                <p>
+                    Готовьтесь окунуться в удивительное путешествие по миру уникальных шедевров, 
+                    творчества и стиля, где каждый стежок, каждая вышивка и аксессуар наполнят 
+                    вашу жизнь уютом и неповторимым шармом!
+                </p>
+            </div>
+            <div class="secondmaintext">
+                <ul>
+                    В каждом изделии:
+                    <li>капля заботы</li>
+                    <li>море радости</li>
+                    <li>океан нежности</li>
+                </ul>
+                </div>
+                <div class="downsign">
+                    <img src="{% static "svg/Ваш источник вдохновения.svg" %}" />
+                </div>
+                <div id="goshoppinganimate">
+                    <button class="GoShopping">
+                        Вперед за покупками!
+                    </button>
+                </div>
+                <button class="GoShoppingMob">
+                    Вперед за покупками!                    
+                </button>
+        </div>
+        
+        <footer style="background-image: url(static/svg/Пунктир\ по\ ширине\ страницы.svg);"> 
+            <div id="footertext">
+                <div id="c2023">
+                    ©2023  
+                </div>
+                <div id="copy">
+                    Копирование материалов без согласия автора запрещено
+                </div>
+                <div id="feedback">
+                — Оставьте отзыв и помогите нам стать лучше! —
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>
+{%endblock%}
+
