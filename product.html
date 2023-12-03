@@ -63,21 +63,58 @@
 
     <div class="product">
         <div class="ProductText">Карточка товара</div>
+        <form id="product-details-form">
             <div class="allplaceholders">
-                <input type="text" name="name" placeholder="Название товара" class="placeholder"> 
+                <input type="text" placeholder="Название товара" disabled class="placeholder" id="productName"> 
                 <p class="placeholdertext">Состав</p>
-                <input type="text" name="name" placeholder="Cостав" class="placeholder"> 
+                <input type="text" placeholder="Cостав" disabled class="placeholder" id="productComposition"> 
                 <p class="placeholdertext">Цвет</p>
-                <input type="text" name="name" placeholder="Цвет" class="placeholder">
+                <input type="text" placeholder="Цвет" disabled class="placeholder" id="productColor">
                 <p class="placeholdertext">Размер</p>
-                <input type="text" name="name" placeholder="Размер" class="placeholder"> 
+                <input type="text" placeholder="Размер" disabled class="placeholder" id="productSize"> 
                 <p class="placeholdertext">Описание</p>
-                <input type="text" name="name" placeholder="Описание" class="placeholder">
-                <p class="placeholdertextprice">Цена</p>
-                <input type="text" name="name" placeholder="Цена" class="price">
+                <input type="text" placeholder="Описание" disabled contenteditable="true" class="placeholder" id="productDescription">
+                <p class="placeholdertextprice">Цена, руб</p>
+                <input type="text" placeholder="Цена" disabled class="price" id="productPrice">
                 <button class="AddProduct">Добавить</button>
             </div>
+        </form> 
     </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const productName = urlParams.get('product');
+        const productDetailsForm = document.getElementById('product-details-form');
+    
+        if (productName === 'product1') {
+          setProductDetails("Зайчики-брелочки", "Пряжа", "Бежевый, белый", "Высота: 15 см", "Милое дополнение к связке ключей или замку рюкзака.", "250.00");
+        } else if (productName === 'product2') {
+          setProductDetails("Мишки с бантиками", "Пряжа", "Бежевый, коричневый", "Высота: 30 см", "Приятный сюрприз для ребенка и прелестный декор для комнаты.", "250.00");
+        } else if (productName === 'product3') {
+          setProductDetails("Набор 'Пудровый цветок'", "Шерсть (70%), акрил (30%)", "Розовый", "Универсальный", "Выгодное предложение: теплая шапочка, удобные варежки и шарфик в наборе.", "1000.00");
+        } else if (productName === 'product4') {
+          setProductDetails("Свитер 'Солнечный день'", "Шерсть (60%), акрил (40%)", "Желтый", "S (40-44), M (46-50), L (52-54)", "Этот свитер - лучики солнышка, согревающие в холодные дни.", "1500.00");
+        } else if (productName === 'product5') {
+          setProductDetails("Свитер 'Морозная роза'", "Эластан (37%), кашемир (53%), лайкра (10%)", "Красный", "S (40-44), M (46-50), L (52-54)", "Леденящая красота - ваш ключ к стильному зимнему облику!", "1500.00");
+        } else if (productName === 'product6') {
+          setProductDetails("Мишки с шарфиками", "Пряжа", "Бежевый и голубой, бежевый и желтый", "Высота: 25 см", "Мягкая игрушка, несущая в дом тепло, уют и неповторимый душевный шарм.", "220.00");
+        } else if (productName === 'product7') {
+          setProductDetails("Набор 'Сладкая вата'", "Пряжа", "Розовый", "Универсальный", "Нежные аксессуары для больших модниц.", "1000.00");
+        } else if (productName === 'product8') {
+          setProductDetails("Шарф 'Спелая малина'", "Пряжа", "Фиолетовый", "Универсальный", "Темно-малиновый шарф придает строгости, загадочности и яркие нотки страсти.", "750.00");
+        } else if (productName === 'product9') {
+          setProductDetails("Свитер 'Антик'", "Эластан (37%), кашемир (53%), лайкра (10%)", "Розовый", "S (40-44), M (46-50), L (52-54)", "Отличное решение для зимних прадздников!", "1500.00");
+        }
+
+        function setProductDetails(name, composition, color, size, description, price) {
+          document.getElementById('productName').value = name;
+          document.getElementById('productComposition').value = composition;
+          document.getElementById('productColor').value = color;
+          document.getElementById('productSize').value = size;
+          document.getElementById('productDescription').value = description;
+          document.getElementById('productPrice').value = price;
+        }
+      </script>
 
     <footer> 
         <div id="footertext">

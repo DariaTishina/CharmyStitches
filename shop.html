@@ -68,22 +68,28 @@
             <a href="product.html"><button class="Add">Добавить</button></a>
         </div>
         <div id="container">
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
+            <div class="product" onclick="redirectToProduct('product1')"><img src="svg/product/БежевыйБелыйКрольчата.svg" width="100%" height="100%">Зайчики-брелочки</div>
+            <div class="product" onclick="redirectToProduct('product2')"><img src="svg/product/БежевыйКоричневыйМишка.svg" width="100%" height="100%">Мишки с бантиками</div>
+            <div class="product" onclick="redirectToProduct('product3')"><img src="svg/product/БежевыйНаборШапкаВарежки.svg" width="100%" height="100%">Набор "Пудровый цветок"</div>
+            <div class="product" onclick="redirectToProduct('product4')"><img src="svg/product/ГорчичныйСвитер.svg" width="100%" height="100%">Свитер "Солнечный день"</div>
+            <div class="product" onclick="redirectToProduct('product5')"><img src="svg/product/КрасныйСвитер.svg" width="100%" height="100%">Свитер "Морозная роза"</div>
+            <div class="product" onclick="redirectToProduct('product6')"><img src="svg/product/МишкиЖелтыйСинийШарфик.svg" width="100%" height="100%">Мишки с шарфиками</div>
         </div>
         <div id="container">
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
-            <div class="product"></div>
+            <div class="product" onclick="redirectToProduct('product7')"><img src="svg/product/РозовыйНаборШапкаВарежкиШарфик.svg" width="100%" height="100%">Набор "Сладкая вата"</div>
+            <div class="product" onclick="redirectToProduct('product8')"><img src="svg/product/ТеплоКоричневыйШарфик.svg" width="100%" height="100%">Шарф "Спелая малина"</div>
+            <div class="product" onclick="redirectToProduct('product9')"><img src="svg/product/ЯркоПудровыйСвитер.svg" width="100%" height="100%">Свитер "Антик"</div>
+            <div class="product" onclick="redirectToProduct('product10')">Товар10</div>
+            <div class="product" onclick="redirectToProduct('product11')">Товар11</div>
+            <div class="product" onclick="redirectToProduct('product12')">Товар12</div>
         </div>
     </div>
+
+    <script>
+        function redirectToProduct(productName) {
+          window.location.href = 'product.html?product=' + productName;
+        }
+      </script>
 
     <footer> 
         <div id="footertext">

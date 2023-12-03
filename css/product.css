@@ -12,11 +12,6 @@
     margin: auto;
 }
 
-.inputphoto {
-    padding-top: 35px;
-    padding-left: 1100px;
-}
-
 .AddProduct {
     width: 150px;
     height: 50px;
@@ -38,9 +33,11 @@
 }
 
 .placeholder {
+    font-size: 17px;
     border-radius: 5px; 
     background-color: #E6DFCC; 
-    padding-right: 150px;
+    padding-right: 10%;
+    width: 60%;
 }
 
 .allplaceholders {
@@ -50,17 +47,18 @@
 
 .placeholdertext {
     padding-top: 8px; 
-    font-size: 22px; 
+    font-size: 23px; 
     color: #E6DFCC;
 }
 
 .price {
+    text-align: center;
     border-radius: 15px; 
     background-color: #E6DFCC;
     width: 10%;
     height: 9%;
-    margin-top: 7px;
-    margin-left: 115px;
+    margin-top: 6px;
+    margin-left: 117px;
     height: 65px;
     width: 180px;
 }
@@ -86,7 +84,7 @@
     }
 
     .allplaceholders {
-        padding-left: 7%;
+        padding-left: 7%
     }
 
     .placeholder {
